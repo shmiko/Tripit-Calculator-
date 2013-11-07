@@ -18,7 +18,8 @@ var server = http.createServer(function (req, res) {
         var localRes = res; 
         result.report = report;
         result.final= calculateFuture(result.start, report);
-        localRes.writeHead(200, { 'Content-Type': 'application/json' })
+        localRes.setHeader("Access-Control-Allow-Origin", "http://node.dev");
+        localRes.writeHead(200, { 'Content-Type': 'application/json' });
         localRes.end(JSON.stringify(result))
     }
     

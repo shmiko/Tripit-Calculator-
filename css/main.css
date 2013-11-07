@@ -1,0 +1,15 @@
+body{
+    font-family: "Eurostile";
+    font-size: 36px;
+}
+th{
+    font-weight: normal;
+    text-align: left;
+}
+td{
+    text-align: right;
+}
+
+.total th, .total td{
+    font-weight: bold;
+}
